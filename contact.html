@@ -12,9 +12,10 @@
     <link rel="icon" href="images/Logo_min.svg" type="image/svg+xml">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="headerTop">
         <div class="container">
             <div class="header-wrapper">
+                <button class="burger-menu" onclick="openModal()"></button>
                 <div class="logo"></div>
                 <nav class="nav">
                     <a href="#" class="nav-link">Главная</a>
@@ -24,7 +25,7 @@
                 </nav>
                 <a class="cart" href="#">1250₽ <span class="cart-count">5</span></a>
                 <!-- <div class="user-info">
-                    <a class="cart" href="#">1250₽ <span class="cart-count">5</span></a>
+                    
                     <a href="#" class="user"></a>
                 </div> -->
             </div>
@@ -133,5 +134,16 @@
             </div>
         </div>
     </footer>
+    <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+    <div class="modal" id="modal">
+        <nav class="nav _modal">
+            <a href="#" class="nav-link">Главная</a>
+            <a href="index.html" class="nav-link">Меню</a>
+            <a href="#" class="nav-link">О нас</a>
+            <a href="contact.html" class="nav-link">Контакты</a>
+        </nav>
+        <button class="modal-close" onclick="closeModal()"></button>
+    </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
