@@ -564,6 +564,8 @@ a {
 /* contact */
 
 .contact {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1075px;
   margin: 0 auto;
@@ -578,15 +580,12 @@ a {
 }
 
 .yandex-map {
-  width: 680px;
-  height: 550px;
+  width: 100%;
+  max-width: 680px;
+  height: 80vw;
+  max-height: 550px;
   border-radius: 20px;
   border: 2px solid var(--accent-light);
-}
-
-.contact-map {
-  max-width: 680px;
-  max-height: 550px;
 }
 
 .adresses {
@@ -771,13 +770,8 @@ a {
     grid-template-rows: auto;
     gap: 20px 50px;
   }
-  .yandex-map {
-    width: 580px;
-    height: 450px;
-  }
   .contact-second {
     flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -942,12 +936,6 @@ a {
   .contact-main {
     margin-top: 50px;
   }
-  .yandex-map {
-    width: 380px;
-    height: 250px;
-    border-radius: 20px;
-    border: 2px solid var(--accent-light);
-  }
   .adresses {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -963,8 +951,5 @@ a {
   }
   .menu-item._additionally .menu-info {
     flex-basis: 130px;
-  }
-  .yandex-map {
-    display: none;
   }
 }
