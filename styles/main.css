@@ -772,6 +772,7 @@ a {
   }
   .contact-second {
     flex-direction: column;
+    max-width: 300px;
   }
 }
 
