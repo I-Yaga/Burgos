@@ -954,4 +954,10 @@ a {
   .menu-item._additionally .menu-info {
     flex-basis: 130px;
   }
+  .header-wrapper {
+    justify-content: space-between;
+  }
+  .logo {
+    display: none;
+  }
 }
