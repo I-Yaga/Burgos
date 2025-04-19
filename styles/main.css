@@ -662,10 +662,6 @@ a {
 }
 
 @media (max-width: 1182px) {
-  .nav {
-    margin-left: 0;
-    gap: min(3vw, 30px);
-  }
   .burger-menu {
     display: block;
   }
